@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom Tailwind (Full-Bleed)</title>
+
+  <!-- Tailwind output -->
+  <link href="./dist/output.css" rel="stylesheet" />
+
+  <!-- icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@latest/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<!-- prevent tiny horizontal scroll from positioned images -->
+<body class="min-h-screen bg-pink-950 overflow-x-hidden">
+
+  <!-- HEADER (full width) -->
+  <header class="bg-pink-400 fixed top-0 left-0 w-full z-50">
+    <nav class="text-white h-14 flex items-center justify-between px-4 sm:px-6 lg:px-8 -tracking-wider w-full">
+      <a href="#" class="flex items-center text-2xl leading-none">
+        <span class="font-oswald text-white">Ice</span>
+        <span class="font-oswald text-pink-600 ml-1">Cream</span>
+        <span class="ml-1">🍦</span>
+      </a>
+
+      <ul class="hidden md:flex items-center gap-6 text-pink-700">
+        <li><a class="hover:text-white duration-200" href="#home">Home</a></li>
+        <li><a class="hover:text-white duration-200" href="#about">About us</a></li>
+        <li><a class="hover:text-white duration-200" href="#menu">Menu</a></li>
+        <li><a class="hover:text-white duration-200" href="#reviews">Reviews</a></li>
+        <li><a class="hover:text-white duration-200" href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="flex items-center gap-4">
+        <i class="ri-moon-line cursor-pointer"></i>
+        <button class="md:hidden" aria-label="menu">
+          <i class="ri-menu-2-line cursor-pointer"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="pt-16 md:pt-20 space-y-12 md:space-y-16 lg:space-y-20">
+
+    <!-- HERO (full width grid) -->
+    <section id="home" class="px-4 sm:px-6 lg:px-8 ">
+      <div class="grid grid-cols-1 md:grid-cols-2  items-center mt-20">
+
+    <div class="relative md:h-[520px] ">  
+      <!-- mobile single -->  
+      <img src="dripicecream.png" alt="ice-cream"  
+           class="w-64 mx-auto md:hidden select-none /*transition*/">  
+
+      <!-- tablet/desktop image -->  
+     
+    </div>  
+
+        <!-- RIGHT: copy -->
+        <div class="relative text-center md:text-left md:pl-6 lg:pl-12 md:pt-8 lg:pt-16 ">
+          <h1 class="text-white text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
+            ANTIDEPRESSANT<br class="hidden sm:block"> ICE-CREAM.
+          </h1>
+          <p class="mt-4 text-white/90 text-sm md:text-base leading-6 md:leading-7 max-w-[60ch] md:max-w-none mx-auto md:mx-0">
+            The scoop you reach for when life is doing the most. You don’t need anyone’s permission.<br/>
+            Sometimes happiness really does taste sweet. Your tiny therapy? One scoop. Serotonin by scoop. </br>
+            Don’t play!
+          </p>
+
+          <div class="text-base flex items-center justify-center md:justify-start text-white font-roboto py-8 gap-10 md:gap-16">
+            <div class="text-center">
+              <i class="fa-solid fa-face-grin-tongue text-4xl text-pink-600"></i><br/>Tasty
+            </div>
+            <div class="text-center">
+              <i class="fa-solid fa-snowflake text-4xl text-sky-400"></i><br/>Icy
+            </div>
+            <div class="text-center">
+              <i class="fa-solid fa-ice-cream text-4xl text-pink-600"></i><br/>Creamy
+            </div>
+          </div>
+
+          <a href="#"
+             class="inline-flex items-center justify-center rounded-md bg-pink-600 text-white
+                    text-sm md:text-base px-5 md:px-6 py-3 hover:opacity-80">
+            Learn more
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- category-->
+    <section id="category" class="px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 ">
+        <!-- CARD 1 -->
+        <article class="relative rounded-xl bg-pink-600 p-4 pl-24 overflow-hidden h-full w-full">
+          <img src="icecream-cat.png" alt="" class="absolute left-4 bottom-3 w-20 h-20 object-contain">
+          <h2 class="text-white font-semibold font-roboto">Ice-cream</h2>
+          <p class="text-white/90 text-sm">Different flavours of ice-cream to make your day.</p>
+          <a href="#" class="mt-3 inline-block underline text-white">Buy Online</a>
+        </article>
+
+        <!-- CARD 2 -->
+        <article class="relative rounded-xl bg-black p-4 pl-24 overflow-hidden h-full w-full">
+          <img src="dessert.jpg" alt="" class="absolute left-4 bottom-3 w-20 h-20 object-contain">
+          <h2 class="text-white font-semibold font-roboto">Desserts</h2>
+          <p class="text-white/90 text-sm">Different flavours of desserts to make your day.</p>
+          <a href="#" class="mt-3 inline-block underline text-pink-400">Buy Online</a>
+        </article>
+
+        <!-- CARD 3 -->
+        <article class="relative rounded-xl bg-pink-600 p-4 pl-24 overflow-hidden h-full w-full">
+          <img src="milkshake-for-cat.png" alt="" class="absolute left-4 bottom-3 w-20 h-20 object-contain">
+          <h2 class="text-white font-semibold font-roboto">Milkshake</h2>
+          <p class="text-white/90 text-sm">Different flavours of milkshake to make your day.</p>
+          <a href="#" class="mt-3 inline-block underline text-white">Buy Online</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROMO (full width, stretches evenly) -->
+    <section id="promo" class="px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-stretch gap-6 lg:gap-10">
+
+        <!-- Card 1 -->
+        <div class="bg-black rounded-lg p-5 flex flex-col md:flex-row md:items-center flex-1">
+          <img src="icebaby.jpg" alt="imagepro" class="w-32 mx-auto md:mx-0">
+          <div class="md:px-6 pt-5 md:pt-0 space-y-2">
+            <h2 class="text-white text-xl font-roboto font-bold">GET A DISCOUNT ON WEEKENDS</h2>
+            <p class="text-white/90 text-sm">Get any flavour of desserts of choice at a discounted price</p>
+            <a href="#" class="text-pink-600 underline">Buy online</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+           <div class="bg-black rounded-lg p-5 flex flex-col md:flex-row md:items-center flex-1">
+          <img src="milkshake for cat.png" alt="imagepro" class="w-32 mx-auto md:mx-0">
+          <div class="md:px-6 pt-5 md:pt-0 space-y-2">
+            <h2 class="text-white text-xl font-roboto font-bold">FREE TOPPINGS THIS FRIDAY</h2>
+            <p class="text-white/90 text-sm">Order any milkshake and get free toppings one day only!</p>
+            <a href="#" class="text-pink-600 underline">Buy online</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>

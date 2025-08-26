@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Buda:wght@300&family=Oswald:wght@200..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  
+}
+
+/* Utilities */
+@layer utilities {
+  /* Title for the hero text block */
+  .home-title { @apply text-left; }
+
+  /* Card title — single, valid rule */
+  .card-title { @apply text-white font-semibold text-lg; }
+}
+
+/* Components */
+@layer components {
+  .btn { @apply inline-flex items-center justify-center rounded-md font-medium transition duration-200; }
+  .btn-primary { @apply bg-pink-600 text-white hover:opacity-80; }
+}
+
+.parent-container{
+  border-radius: 0.5rem;
+}
