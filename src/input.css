@@ -18,6 +18,10 @@
   .card-title { @apply text-white font-semibold text-lg; }
 }
 
+.aboutSection_title{
+  @apply text-4xl font-oswald font-bold uppercase lg:text-3xl;
+}
+
 /* Components */
 @layer components {
   .btn { @apply inline-flex items-center justify-center rounded-md font-medium transition duration-200; }

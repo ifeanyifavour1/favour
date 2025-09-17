@@ -26,7 +26,7 @@ module.exports = {
         },
       },
       animation: {
-        animateY: "move 2s linear infinite",
+        'animateY': "move 2s linear infinite",
       },
     },
   },
